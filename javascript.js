@@ -1,9 +1,9 @@
 $(function()
 {	
 	var navOffset = $("nav").offset().top;
-	var skillsOffset = $(".skills").offset().top - 200;	
-	var descriptionOffset = $(".descriptionOfMe").offset().top - 200;	
-	var quotationOffset = $(".quotation").offset().top - 300;
+	var skillsOffset = $(".skills").offset().top - 400;	
+	var descriptionOffset = $(".descriptionOfMe").offset().top - 400;	
+	var quotationOffset = $(".quotation").offset().top - 400;
 	var windowWidth = $(window).width();
 	var menuCss;
 	
@@ -59,9 +59,9 @@ $(function()
 	$(window).resize(function()
 	{	
 		windowWidth = $(window).width();
-		skillsOffset = $(".skills").offset().top;	
-		descriptionOffset = $(".descriptionOfMe").offset().top;	
-		quotationOffset = $(".quotation").offset().top;		
+		skillsOffset = $(".skills").offset().top - 400;	
+		descriptionOffset = $(".descriptionOfMe").offset().top - 400;	
+		quotationOffset = $(".quotation").offset().top - 400;		
 	});	
 			
 	$(".scrollToCv").click(function()
