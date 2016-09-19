@@ -216,8 +216,8 @@ nav
 
 .service
 {
- 
-	@include width1200px;	
+	max-width: 75em;
+	margin: auto;
 	padding: 4em 1em 4em 1em;
 	text-align: center;
 }
