@@ -1,127 +1,147 @@
 $(function()
-{		
-	var menuCss, displayBlock, srcPicture;
-	var aboutUsOffset = $(".aboutUs").offset().top;
-	var serviceOffset = $(".service").offset().top;
-	var workOffset = $(".work").offset().top;
-	var footerOffset = $("footer").offset().top;
+{	
+	var navOffset = $("nav").offset().top;
+	var skillsOffset = $(".skills").offset().top  - 400;	
+	var descriptionOffset = $(".descriptionOfMe").offset().top  - 400;	
+	var quotationOffset = $(".quotation").offset().top  - 400;
 	var windowWidth = $(window).width();
-	var tableOffset = [aboutUsOffset, serviceOffset, workOffset, footerOffset];
+	var menuCss;
 	
-	function fadeOutMenu(width)
-	{	
-		if(width < 961)
+	$(".icon-cancel").hide();
+	$("h1").slideDown(1600);		
+
+	$(".imgFace").mouseover(function()
+	{
+		$(this).attr("src", "pictures/faceColor.jpg");
+	});
+
+	$(".imgFace").mouseout(function()
+	{
+		$(this).attr("src", "pictures/faceDesaturation.jpg");
+	});
+	
+	$("#logo").click(function()
+	{
+		$("html, body").filter(":not(:animated)").animate(
+		{ 
+			scrollTop: 0 
+		}, 2000);
+	});
+	
+	function changeIconOrNot(width)
+	{
+		if (width < 641) 
 		{
-			$(".menu").addClass("fadeOutRight animated");
+			$(".icon-cancel").filter(":not(:animated)").toggle(function()
+			{
+				$(".icon-menu").toggle();
+				$(".menu").slideUp();
+			});		
 		}
 	}
-
-	/* obsługa zdarzeń: wysuwania i chowania menu */
+	
+	/* Schowanie menu, jeśli użytkownik naciśnie na miejsce poza nim */
+	
+	$(window).click(function()
+	{
+		menuCss = $(".menu").filter(":not(:animated)").css("display");		
+		
+	    if(menuCss == "block")
+		{
+			changeIconOrNot(windowWidth);
+		}
+	});
+	
+	/* Schowanie menu, jeśli użytkownik naciśnie na miejsce poza nim */	
+	/* ---------------------------------------------------------- */	
+	/* Obsługa menu w postaci scrollowania do danej sekcji strony */
 	
 	$(window).resize(function()
 	{	
 		windowWidth = $(window).width();
-		
-		aboutUsOffset = $(".aboutUs").offset().top;
-		serviceOffset = $(".service").offset().top;
-	    workOffset = $(".work").offset().top;
-		footerOffset = $("footer").offset().top;	
-		
-		if (windowWidth >= 961)
-		{
-			$(".menu").removeClass("fadeOutRight animated");				
-		}
-		
-		if (windowWidth < 961)
-		{
-			$(".menu").removeClass("fadeInRight animated");
-			$("nav").css("z-index", 0);
-		}	
-	});
-	
-	$(".openMenu").mousedown(function()
-	{
-		$(".menu").removeClass("fadeOutRight animated");		
-		$(".menu").addClass("fadeInRight animated");
-		$("nav").css("z-index", 3);
+		skillsOffset = $(".skills").offset().top - 400;	
+		descriptionOffset = $(".descriptionOfMe").offset().top - 400;	
+		quotationOffset = $(".quotation").offset().top - 400;		
 	});	
-	
-	$(window).click(function()
+			
+	$(".scrollToCv").click(function()
 	{
-		menuCss = $(".menu").filter(":not(:animated)").css("visibility");	
-				
-	    if((menuCss == "visible") && (windowWidth < 961))
-		{		
-			$(".menu").addClass("fadeOutRight animated");			
-			$("nav").css("z-index", 0);
-		}		
-	});			
-	
+		$("html, body").filter(":not(:animated)").animate(
+		{ 
+			scrollTop: $(".CV-introduction").offset().top - 41
+		}, 2000, changeIconOrNot(windowWidth));
+	});
 
-	/* obsługa zdarzeń: wysuwania i chowania menu */
-	/* ------------------------------------------ */
-	/* scroll do danej sekcji storny */
-	
-	$(".menuAbout").click(function()
+	$(".scrollToAboutMe").click(function()
 	{
 		$("html, body").filter(":not(:animated)").animate(
 		{ 
-			scrollTop: aboutUsOffset
-		}, 2000, fadeOutMenu(windowWidth));
+			scrollTop: $(".aboutMeIntroduction").offset().top - 41
+		}, 2000, changeIconOrNot(windowWidth));
 	});
-		
-	$(".menuService").click(function()
-	{
-		$("html, body").filter(":not(:animated)").animate(
-		{ 
-			scrollTop: serviceOffset
-		}, 2000, fadeOutMenu(windowWidth));
-	});
-		
-	$(".menuWork").click(function()
-	{
-		$("html, body").filter(":not(:animated)").animate(
-		{ 
-			scrollTop: workOffset
-		}, 2000, fadeOutMenu(windowWidth));
-	});
-		
-	$(".menuContact").click(function()
-	{
-		$("html, body").filter(":not(:animated)").animate(
-		{ 
-			scrollTop: footerOffset
-		}, 2000, fadeOutMenu(windowWidth));
-	});
-	
-	/* scroll do danej sekcji storny */	
-	
 
-	$(".accordion").on("click", ".accordionControl", function(e)
-	{	
-		e.preventDefault();
-		
-		displayBlock = $(this).next().css("display");	
-		
-		if (displayBlock == "block")
+	$(".scrollToContact").click(function()
+	{
+		$("html, body").filter(":not(:animated)").animate(
 		{
-			srcPicture = "pictures/downIcon.png";
+			scrollTop: $(".contactIntroduction").offset().top - 41
+		}, 2000, changeIconOrNot(windowWidth));
+	});  
+
+	
+	/* Obsługa menu w postaci scrollowania do danej sekcji strony */	
+	/* ---------------------------------------------------------- */
+	/* Osługa zdarzeń związanych ze scrollowaniem strony przez usera */
+
+	$(window).scroll(function()
+	{		
+		var scrollWindow = $(window).scrollTop();
+		
+		if (scrollWindow >= navOffset)
+		{
+			$("nav").addClass("fixed");
 		}
-		else srcPicture = "pictures/upIcon.png";	
-		
-		$(".accordionPanel").each(function()
+		else
 		{
-			$(this).slideUp();	
-			$(this).prev().attr("src", "pictures/downIcon.png");		
-		});		
+			$("nav").removeClass("fixed");
+		}	
 		
-		$(this)
-			.attr("src", srcPicture)
-			.next(".accordionPanel")
-			.not(":animated")
-			.slideToggle();
+		if (scrollWindow >= skillsOffset)
+		{
+			$(".skills").addClass("fadeInUp animated");
+			$(".skillsDescription").addClass("fadeInUp animated");
+		}				
+		if (scrollWindow >= quotationOffset)
+		{
+			$(".quotation").addClass("bounceInLeft animated");
+			$(".author").addClass("bounceInLeft animated");
+		}		
+		if (scrollWindow >= descriptionOffset)
+		{
+			$(".descriptionOfMe").addClass("bounceInRight animated");
+			$(".imgFace").addClass("bounceInRight animated");
+		}		
 	});
+		
+	/* Osługa zdarzeń związanych ze scrollowaniem strony przez usera */
+	/* ------------------------------------------------------------ */	
+	/* Obsluga zdarzenia zmiany wygladu przycisku menu */
 	
-
-	
+		$(".icon-menu").mousedown(function()
+		{
+			$(this).filter(":not(:animated)").toggle(function()
+			{
+				$(".icon-cancel").toggle();
+				$(".menu").slideDown();
+			});
+		});
+		
+		$(".icon-cancel").mousedown(function() 
+		{
+			$(this).filter(":not(:animated)").toggle(function()
+			{
+				$(".icon-menu").toggle();
+				$(".menu").slideUp();			
+			});
+		});		
 });

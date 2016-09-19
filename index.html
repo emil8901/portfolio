@@ -1,344 +1,128 @@
 <!DOCTYPE html>
 
-<html lang = "en">
+<html lang = "pl">
+
 	<head>
 		<meta charset = "utf-8">
-		<meta name = "viewport" content = "width=device-width, 
+		<meta name = "viewport" content = "width = device-width, 
 		initial-scale = 1">
 		<meta http-equiv = "x-ua-compatible" content = "ie = edge">
+
+		<title> Portfolio Emil Iwicki </title>
 		
-		<title>MoGo</title>
-		
-		<link rel = "stylesheet" href = "scss/styles.css">
+		<link rel = "stylesheet" href = "scss/styles.css">	
 		<link rel = "stylesheet" href = "scss/styles641px.css">
-		<link rel = "stylesheet" href = "scss/styles961px.css">
-		<link rel = "stylesheet" href = "scss/styles1025px.css">
-		<link rel = "stylesheet" href = "animate.css">
 		<link rel = "stylesheet" href = "css/fontello.css">
-		<link href = "https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700" rel="stylesheet">
-		
+		<link href = "https://fonts.googleapis.com/css?family=Oxygen&subset=latin,latin-ext" rel = "stylesheet">
+		<link href = "animate.css" rel = "stylesheet" type = "text/css">
 		<!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	</head>
+
 	<body>
-	
-		<header class = "banner">
-			<button class = "openMenu">
-				<i class = "icon-menu"></i>
-			</button>
+
+		<div class = "container">
+
 			<nav>
-				<figure id = "logo">
-					<img src = "pictures/logo.png">
+				<figure>
+					<img src = "pictures/logo.png" alt = "logo" id = "logo">
 				</figure>
+				<button class = "open-menu">
+					<i class = "icon-menu"></i>
+					<i class = "icon-cancel"></i> 
+				</button>
 				<ol class = "menu">
-					<li class = "menuAbout">ABOUT</li>
-					<li class = "menuService">SERVICE</li>
-					<li class = "menuWork">WORK</li>
-					<li class = "menuContact">CONTACT</li>
-					<li><img src = "pictures/trolley.png"></li>
-					<li><img src = "pictures/search.png"></li>
+					<li class = "menuDescription scrollToCv">Umiejętności</li>
+					<li class = "menuDescription scrollToAboutMe">O mnie</li>
+					<li class = "menuDescription scrollToContact">Projekt</li>
+					<li class = "menuDescription" ><a href = "mailto:emil.iwicki@gmail.com" class = "mailContact">Kontakt</a></li>
 				</ol>
 			</nav>
-			<h1 class = "creativeTemplate">Creative Template</h1>
-			<h1 class = "welcomeToMogo">WELCOME<br>TO MOGO</h1>
-			<button class = "learnMore">
-				Learn More
-			</button>
-		</header>
-		
-		<section class = "aboutUs">
-		
-			<header class = "aboutUsHeader">
-				<h3 class = "kaushanFont">What we do</h3>
-				<h1 class = "storyAboutUs">STORY ABOUT US</h1>
+
+			<header>
+				<h1>Emil Iwicki</h1>
+				<h1>Student PG</h1>
 			</header>
 			
-			<p class = "aboutUsTextParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut tortor pharetra, porta risus sit amet, eleifend erat. Pellentesque bibendum erat nec leo efficitur maximus.</p>
-			
-			<figure class = "imagesFirstSection">
-				<img src = "pictures/firstSectionFirstPhoto.jpg"
-				class = "images">
-				<img src = "pictures/firstSectionSecondPhoto.jpg" class = "images">
-				<img src = "pictures/firstSectionThirdPhoto.jpg" class = "images">
-			</figure>
+		</div>
 		
+		<section class = "CV-introduction">
+			<h4 class = "CV-introduction-text">Umiejętności<br>
+			<i class = "icon-doc-text"></i></h4>
 		</section>
 		
-		<section class = "facts">
-		
-			<section class = "factsLine">
-				<div class = "factsDescription">
-					<p class = "howMuchThis">42</p>
-					<p class = "whatKindOfFacts">WEB DESIGN PROJECTS</p>
-				</div>
-				<div class = "factsDescription">
-					<p class = "howMuchThis">123</p>
-					<p class = "whatKindOfFacts">HAPPY CLIENT</p>
-				</div>
-				<div class = "factsDescription">
-					<p class = "howMuchThis">15</p>
-					<p class = "whatKindOfFacts">AWARD WINNER</p>
-				</div>
-				<div class = "factsDescription">
-					<p class = "howMuchThis">99</p>
-					<p class = "whatKindOfFacts">CUP OF COFFEE</p>
-				</div>
-				<div class = "factsDescription">
-					<p class = "howMuchThis">24</p>
-					<p class = "whatKindOfFacts">MEMBERS</p>
-				</div>
-			</section>
-		
-		</section>
-		
-		<section class = "service">
-		
-			<header class = "serviceHeader">
-				<h3 class = "kaushanFont">We work with</h3>
-				<h1 class = "amazingServices">AMAZING SERVICES</h1>
-			</header>
-			
-			<section class = "descriptionServices">
-				<img class = "serviceImage" src = "pictures/photography.png">	
-				<aside class = "textNextToImage">					
-					<h5 class = "titleOfText">PHOTOGRAPHY</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed du eiusmod tempor.</p>
-				</aside>
-			</section>
-			
-			<section class = "descriptionServices">
-				<img class = "serviceImage" src = "pictures/webdesign.png">	
-				<aside class = "textNextToImage">					
-					<h5 class = "titleOfText">WEB DESIGN</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed du eiusmod tempor.</p>
-				</aside>
-			</section>	
-
-			<section class = "descriptionServices">
-				<img class = "serviceImage" src = "pictures/creativity.png">	
-				<aside class = "textNextToImage">					
-					<h5 class = "titleOfText">CREATIVITY</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed du eiusmod tempor.</p>
-				</aside>
-			</section>		
-
-			<section class = "descriptionServices">
-				<img class = "serviceImage" src = "pictures/seo.png">	
-				<aside class = "textNextToImage">					
-					<h5 class = "titleOfText">SEO</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed du eiusmod tempor.</p>
-				</aside>
-			</section>	
-
-			<section class = "descriptionServices">
-				<img class = "serviceImage" src = "pictures/csshtml.png">	
-				<aside class = "textNextToImage">					
-					<h5 class = "titleOfText">CSS/HTML</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed du eiusmod tempor.</p>
-				</aside>
-			</section>	
-
-			<section class = "descriptionServices last">
-				<img class = "serviceImage" src = "pictures/digital.png">	
-				<aside class = "textNextToImage">					
-					<h5 class = "titleOfText">DIGITAL</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed du eiusmod tempor.</p>
-				</aside>
-			</section>	
-			
-		</section>
-		
-		<section class = "feauture">
-		
-			<header class = "aboutUsHeader">
-				<h3 class = "kaushanFont">For all devices</h3>
-				<h1 class = "storyAboutUs">UNIQUE DESIGN</h1>
-			</header>
-			
-			<img src = "pictures/iphone.png" class = "iphoneImage">
-		
-		</section>
-		
-		<section class = "service2">
-		
-			<header class = "aboutUsHeader">
-				<h3 class = "kaushanFont">Service</h3>
-				<h1 class = "storyAboutUs">WHAT WE DO</h1>
-			</header>
-			
-			<p class = "aboutUsTextParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut tortor pharetra, porta risus sit amet, eleifend erat. Pellentesque bibendum erat nec leo efficitur maximus.</p>
-			
-			<img src = "pictures/sectionTwoFirstPhoto.jpg" class = "service2Picture">
+		<article class = "CV">
+				<article class = "skills skillsDescription pApperance">	
 				
-			<ul class = "accordion">				
-				<li class = "whatWeDoDescription">
-					<img src = "pictures/photographyService2.png" class = "picturesService2">
-					<p class = "paragraphService2">PHOTOGRAPHY</p>
-					<img src = "pictures/downIcon.png" class = "arrowService2 accordionControl">
-					<div class = "accordionPanel">
-						<p>
-							<i>Morbi tempus, enim nec ultrices condimentum, lectus magna sodales eros, quis efficitur justo elit blandit risus. Donec congue venenatis metus, eu imperdiet arcu pretium suscipit. Donec viverra quam quis nisl dignissim, ut ultricies ex lacinia. Aenean porttitor lobortis elit eget condimentum. Fusce pulvinar hendrerit ante non iaculis. Nulla hendrerit leo enim, ac bibendum ex venenatis id. In eleifend eleifend quam, a gravida tortor rutrum vitae.</i>
-						</p>
+					<div class = "column">
+					
+						<h1>Średnio zaawansowane:</h1>	
+					
+						<img src = "skills/html5.svg" alt = "html5">	
+						<img src = "skills/css3.svg" alt = "css3">
+						<img src = "skills/sass.svg" alt = "sass">
+						
 					</div>
-				</li>
-				
-				<li class = "whatWeDoDescription">
-					<img src = "pictures/creativityService2.png" class = "picturesService2">
-					<p class = "paragraphService2">CREATIVITY</p>
-					<img src = "pictures/downIcon.png" class = "arrowService2 accordionControl">	
-					<div class = "accordionPanel">
-						<p>
-							<i>Morbi tempus, enim nec ultrices condimentum, lectus magna sodales eros, quis efficitur justo elit blandit risus. Donec congue venenatis metus, eu imperdiet arcu pretium suscipit. Donec viverra quam quis nisl dignissim, ut ultricies ex lacinia. Aenean porttitor lobortis elit eget condimentum. Fusce pulvinar hendrerit ante non iaculis. Nulla hendrerit leo enim, ac bibendum ex venenatis id. In eleifend eleifend quam, a gravida tortor rutrum vitae.</i>
-						</p>
-					</div>					
-				</li>
-				
-				<li class = "whatWeDoDescription">
-					<img src = "pictures/webdesignService2.png" class = "picturesService2">
-					<p class = "paragraphService2">WEB DESIGN</p>
-					<img src = "pictures/downIcon.png" class = "arrowService2 accordionControl">	
-					<div class = "accordionPanel">
-						<p>
-							<i>Morbi tempus, enim nec ultrices condimentum, lectus magna sodales eros, quis efficitur justo elit blandit risus. Donec congue venenatis metus, eu imperdiet arcu pretium suscipit. Donec viverra quam quis nisl dignissim, ut ultricies ex lacinia. Aenean porttitor lobortis elit eget condimentum. Fusce pulvinar hendrerit ante non iaculis. Nulla hendrerit leo enim, ac bibendum ex venenatis id. In eleifend eleifend quam, a gravida tortor rutrum vitae.</i>
-						</p>
-					</div>					
-				</li>
-			</ul>
-			
+					
+					<div class = "column">
+					
+						<h1>Podstawowe:</h1>					
+					
+						<img src = "skills/jQuery.svg" alt = "jQuery">				
+						<img src = "skills/photoshop.svg" alt = "photoshop">
+						<img src = "skills/javascript.svg" alt = "bootstrap">
+						<img src = "skills/rwd.png" alt = "rwd">
+						
+					</div>	
+					
+					<div class = "column">
+					
+						<h1>W trakcie nauki:</h1>
+						
+						<img src = "skills/git.svg" alt = "github">					
+						<img src = "skills/bootstrap.svg" alt = "bootstrap">
+						
+					</div>	
+					
+				</article>
+		</article>
+		
+		<section class = "aboutMeIntroduction">
+			<h4 class = "aboutMeIntroductionText">O mnie<br>
+			<i class = "icon-user"></i></h4>
 		</section>
 		
-		<section class = "quote">
-			<blockquote class = "quoteParagraph">
-				<img src = "pictures/messenger.png" class = "pictureQuote">
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut tortor pharetra, porta risus sit amet, eleifend erat. Pellentesque bibendum erat nec leo efficitur maximus."
-			</blockquote>
-			<p class = "quoteAuthor">Jon Doe</p>
-		</section>		
+		<article class = "aboutMe">
+			<h4 class = "descriptionOfMe">Witam, jestem początkującym frontend developerem. Nazywam się Emil Iwicki i studiuję informatykę na Politechnice Gdańskiej. Od ponad roku związany z programowaniem. W wolnym czasie pływak.</h4>
+			<figure class = "aboutMeImage">
+				<img src = "pictures/faceDesaturation.jpg" class = "imgFace" alt = "Emil Iwicki">
+			</figure>
+			<q class = "quotation">Talk is cheap. Show me the code</q>
+			<p class = "author">Linus Torvalds</p>
+		</article>
 		
-		<section class = "ourTeam">
-		
-			<header class = "aboutUsHeader">
-				<h3 class = "kaushanFont">Who we are</h3>
-				<h1 class = "storyAboutUs">MEET OUR TEAM</h1>
-			</header>
+		<section class = "contactIntroduction">
+			<h4 class = "contactIntroductionText">Projekt<br>
+			<i class = "icon-mail-alt"></i></h4>
+		</section>
 
-			<p class = "ourTeamTextParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut tortor pharetra, porta risus sit amet, eleifend erat. Pellentesque bibendum erat nec leo efficitur maximus.</p>	
+		<section class = "project">
 
-			<div>
-				<figure class = "ourTeamFigure">
-					<img src = "pictures/MatthewDix.jpg" class = "ourTeamPerson">
-					<figcaption>Matthew Dix</figcaption>
-					<figcaption class = "myJob">Graphic Design</figcaption>
-				</figure>
+				<a href = "MoGo/index.html">
+					<img src = "pictures/mogoSite.png">
+				</a>
 
-				<figure class = "ourTeamFigure">
-					<img src = "pictures/ChristoferCampbell.jpg" class = "ourTeamPerson">
-					<figcaption>Christofer Campbell</figcaption>
-					<figcaption class = "myJob">Branding/UX Design</figcaption>
-				</figure>
-
-				<figure class = "ourTeamFigure">
-					<img src = "pictures/MichaelFertig.jpg" class = "ourTeamPerson">
-					<figcaption>Michael Fertig</figcaption>
-					<figcaption class = "myJob">Developer</figcaption>
-				</figure>
-			</div>	
-		
 		</section>
 		
-		<section class = "logos">
-			<figure class = "collectionOfLogos">
-				<img src = "pictures/abcd.png" class = "logosStyle">
-				<img src = "pictures/hipster.png"  class = "logosStyle">
-				<img src = "pictures/designquality.png"  class = "logosStyle">
-			</figure>
-			<figure class = "collectionOfLogos">
-				<img src = "pictures/hipsterbarbershop.png" class = "logosStyle">
-				<img src = "pictures/hipsterbarber.png"  class = "logosStyle">
-				<img src = "pictures/studiodesigner.png"  class = "logosStyle">
-			</figure>
-		</section>		
-				
-		<section class = "work">
-		
-			<header class = "aboutUsHeader">
-				<h3 class = "kaushanFont">What we do</h3>
-				<h1 class = "storyAboutUs">SOME OF OUR WORK</h1>
-			</header>		
-				
-			<div class = "groupOfPictures">	
-				<img src = "pictures/photo1.jpg" class = "photosWork" alt = "">
-				<img src = "pictures/photo2.jpg" class = "photosWork" alt = "">
-				<img src = "pictures/photo3.jpg" class = "photosWork" alt = "">
-				<img src = "pictures/photo4.jpg" class = "photosWork" alt = "">
-				<img src = "pictures/photo5.jpg" class = "photosWork" alt = "">
-				<img src = "pictures/photo6.jpg" class = "photosWork" alt = "">
-				<img src = "pictures/photo7.jpg" class = "photosWork" alt = "">
-			</div>
-			
-		</section>		
-				
 		<footer>
-			<section class = "groupOfColumns">
-				<div class = "footerColumn1">
-					<img src = "pictures/logoFooter.png" alt = "">
-					<p class = "footerParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non pharetra neque. Pellentesque tincidunt, nulla non sollicitudin rutrum, erat nisi tincidunt sapien, non condimentum sem risus ac massa.</p>
-					<p class = "followers"><b>15k</b> followers</p>
-					<p class = "followUs"><i>Follow Us:</i></p>
-					<img src = "pictures/footerFollowersFacebook.png" alt = "" class= "socialMedia">
-					<img src = "pictures/footerFollowersTwitter.png" alt = "" class= "socialMedia">
-					<img src = "pictures/footerFollowersInstagram.png" alt = "" class= "socialMedia">
-					<img src = "pictures/footerFollowersPinterest.png" alt = "" class= "socialMedia">
-					<img src = "pictures/footerFollowersGooglePlus.png" alt = "" class= "socialMedia">
-					<img src = "pictures/footerFollowersYouTube.png" alt = "" class= "socialMedia">
-					<img src = "pictures/footerFollowersDribble.png" alt = "" class= "socialMedia">
-					<img src = "pictures/footerFollowersTumblr.png" alt = "" class= "socialMedia">	
-					<form>
-						<input type = "email" placeholder = "Your Email..." required></input>
-						<button>Subscribe</button>
-					</form>	
-				</div>
-			
-				<div class = "footerColumn2">
-					<h4 class = "footerHeader">BLOGS</h4>
-
-						<figure>
-							<img src = "pictures/footerBlog1.jpg" alt = "" class = "blogsImage">
-						</figure>
-							<p class = "descriptionFooterBlogsPictures">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING</p>
-							<p class = "addDate"><i>Jan 9, 2016</i></p>
-						<figure class = "">
-							<img src = "pictures/footerBlog2.jpg" alt = "" class = "blogsImage">
-						</figure>
-							<p class = "descriptionFooterBlogsPictures">CONSECTETUR ADIPISCING ELIT, SED DU EIUSMOD TEMPOR</p>
-							<p class = "addDate"><i>Jan 9, 2016</i></p>
-						<figure class = "">
-							<img src = "pictures/footerBlog3.jpg" alt = "" class = "blogsImage">
-						</figure>						
-							<p class = "descriptionFooterBlogsPictures">SED DU EIUSMOD TEMPOR INCIDIDUNT UT LABORE</p>
-							<p class = "addDate"><i>Jan 9, 2016</i></p>
-
-				</div>
-				<div class = "footerColumn3">
-					<h4 class = "footerHeader">INSTAGRAM</h4>
-					<figure class = "groupOfInstagramPictures">
-						<img src = "pictures/footerInstagram1.jpg" alt = "" class = "instagramPictures">
-						<img src = "pictures/footerInstagram2.jpg" alt = "" class = "instagramPictures">
-						<img src = "pictures/footerInstagram3.jpg" alt = "" class = "instagramPictures">
-						<img src = "pictures/footerInstagram4.jpg" alt = "" class = "instagramPictures">
-						<img src = "pictures/footerInstagram5.jpg" alt = "" class = "instagramPictures">
-						<img src = "pictures/footerInstagram6.jpg" alt = "" class = "instagramPictures">
-						<img src = "pictures/footerInstagram7.jpg" alt = "" class = "instagramPictures">
-						<img src = "pictures/footerInstagram8.jpg" alt = "" class = "instagramPictures">
-						<img src = "pictures/footerInstagram9.jpg" alt = "" class = "instagramPictures">
-					</figure>
-				</div>
-			</section>
-			<p class = "author">&copy 2016 MoGo free PSD template by <a href = "#">Laaqiq</a></p>
-		</footer>		
-			
+			<p class = "copy">&copy 2016 Emil Iwicki</p>
+			<a href = "https://www.facebook.com/emil.iwicki">
+			<i class = "icon-facebook"></i></a>
+		</footer>
+		
 		<script src = "jquery-3.1.0.js"></script>
 		<script src = "javascript.js"></script>
 	</body>
+
 </html>
