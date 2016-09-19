@@ -1,0 +1,30 @@
+/* variables */
+
+$colorWhite: rgb(255, 255, 255);
+$fontKaushan: "Kaushan Script", cursive;
+
+/* variables */
+
+
+
+/* mixins */
+
+@mixin borderBottom
+{
+	display: block;
+	border-bottom: .2em solid rgb(243, 129, 129);
+	content: "";
+	width: 2.5em;
+	margin: 1em auto 2em auto;	
+}
+
+@mixin width1200px
+{
+	& *
+	{
+		max-width: 75em; /* 1200px */
+		margin: auto;	
+	}
+}
+
+/* mixins */

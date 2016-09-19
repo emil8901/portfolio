@@ -1,0 +1,77 @@
+@media(min-width: 1025px)
+{
+	.whatKindOfFacts 
+	{
+		font-size: .7em;
+	}
+
+	.feauture
+	{
+		height: 43.05em;
+	}
+	
+	.iphoneImage
+	{
+		width: initial;
+	}
+	
+	.quoteParagraph
+	{
+		font-size: 1em;
+	}
+
+	.pictureQuote
+	{
+		width: 6em;
+	}
+
+	.groupOfPictures
+	{
+		column-count: 4;
+	}
+	
+	.groupOfColumns
+	{
+		display: flex;
+	}
+	
+	.footerColumn1
+	{   
+		max-width: 28.125em; /* 450px */ 
+		width: 31%;
+		box-sizing: border-box;
+		padding: 0 0 2em 2em;
+		margin-top: 1.75em;
+		text-align: left;
+	}
+	
+	.footerColumn2
+	{   
+		text-align: left;
+	}
+	
+	.footerColumn3
+	{   
+		text-align: left;	
+		margin-top: 0;
+		max-width: 28.125em; /* 450px */ 
+		width: 31%;
+	}
+	
+	.groupOfInstagramPictures
+	{
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 0;
+	}
+	
+	.instagramPictures
+	{
+		margin: .1em .2em .1em 0;
+	}
+	
+	.author
+	{
+		clear: both;
+	}
+}

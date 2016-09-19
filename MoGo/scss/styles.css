@@ -1,0 +1,456 @@
+/* variables */
+/* variables */
+/* mixins */
+/* mixins */
+* {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+body {
+  position: static;
+  min-width: 20em;
+  /* 320px */ }
+
+.banner {
+  background-image: url("../pictures/MoGo_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 40em; }
+  .banner * {
+    max-width: 75em;
+    /* 1200px */
+    margin: auto; }
+
+#logo {
+  margin: 2em 0 0 2em;
+  float: left;
+  height: auto; }
+
+.openMenu {
+  position: relative;
+  z-index: 2;
+  background: 0;
+  padding: 0;
+  border: 0;
+  color: white;
+  margin: 1.85em 2em 0 0em;
+  float: right;
+  font-size: 1.2em; }
+  .openMenu:hover {
+    cursor: pointer; }
+
+nav {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 40em;
+  min-width: 20em; }
+
+.menu {
+  visibility: hidden;
+  padding: 0;
+  box-sizing: border-box;
+  float: right;
+  height: 100%;
+  background-color: #272838;
+  width: 50%; }
+
+.menu li {
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 16.66%;
+  font-size: medium; }
+  .menu li:hover {
+    background-color: #7e7f9a; }
+
+.creativeTemplate {
+  padding-top: 8em;
+  padding-bottom: .5em;
+  font-family: "Kaushan Script", cursive;
+  font-weight: normal;
+  font-size: 1.5em;
+  display: block; }
+
+.welcomeToMogo {
+  font-size: 3em;
+  display: block; }
+  .welcomeToMogo::after {
+    display: block;
+    border-bottom: 0.05em solid white;
+    content: "";
+    width: .75em;
+    margin: .5em auto .5em auto; }
+
+.learnMore {
+  color: white;
+  background: 0;
+  border: 0.2em solid white;
+  padding: .3em .8em .4em .8em;
+  margin: auto; }
+
+.aboutUs {
+  text-align: center;
+  padding: 4em 0 4em 0; }
+  .aboutUs * {
+    max-width: 75em;
+    /* 1200px */
+    margin: auto; }
+
+.aboutUsHeader::after {
+  display: block;
+  border-bottom: 0.2em solid #f38181;
+  content: "";
+  width: 2.5em;
+  margin: 1em auto 2em auto; }
+
+.images {
+  width: 18em;
+  /* 288px */ }
+
+.kaushanFont {
+  font-family: "Kaushan Script", cursive;
+  font-weight: normal; }
+
+.aboutUsTextParagraph {
+  max-width: 65em;
+  color: #999999;
+  font-size: .85em;
+  padding: 0 3em;
+  margin: 0 auto 4em auto; }
+
+.images {
+  padding: 0 .5em 0 .5em; }
+
+.facts {
+  text-align: center;
+  color: white;
+  width: 100%;
+  background: #95e1d3;
+  height: 10em; }
+  .facts * {
+    max-width: 75em;
+    /* 1200px */
+    margin: auto; }
+
+.factsLine {
+  height: 100%;
+  width: 100%;
+  max-width: 75em;
+  /* 1200px */
+  margin: auto; }
+
+.factsDescription {
+  height: 100%;
+  width: 20%;
+  box-sizing: border-box;
+  float: left;
+  padding: 3em .4em 3em .4em;
+  border-right: 0.0625em solid #b5eae0; }
+  .factsDescription:last-child {
+    border-right: 0px; }
+
+.howMuchThis {
+  font-size: 1.8em;
+  font-weight: bold; }
+
+.whatKindOfFacts {
+  font-size: .5em; }
+
+.service {
+  padding: 4em 1em 4em 1em;
+  text-align: center; }
+  .service * {
+    max-width: 75em;
+    /* 1200px */
+    margin: auto; }
+
+.serviceHeader::after {
+  display: block;
+  border-bottom: 0.2em solid #f38181;
+  content: "";
+  width: 2.5em;
+  margin: 1em auto 2em auto;
+  margin-bottom: 2em; }
+
+.descriptionServices {
+  max-width: 25em;
+  display: inline-block; }
+
+.textNextToImage {
+  box-sizing: border-box;
+  padding: 0 1em 1em 1em;
+  color: #999999;
+  font-size: .85em;
+  min-width: 18.75em;
+  max-width: 25em;
+  text-align: justify;
+  display: inline-block; }
+
+.titleOfText {
+  color: black;
+  margin-bottom: 1.5em; }
+
+.serviceImage {
+  vertical-align: top; }
+
+.feauture {
+  height: 24.25em;
+  padding: 4em 1em 0 1em;
+  background-image: url("../pictures/feautureBackground.jpg");
+  text-align: center; }
+  .feauture * {
+    max-width: 75em;
+    /* 1200px */
+    margin: auto; }
+
+.iphoneImage {
+  width: 18em;
+  /* 288px */ }
+
+.service2 {
+  text-align: center;
+  padding: 4em 1em 4em 1em; }
+
+.service2Picture {
+  width: 18em;
+  /* 288px */
+  margin-top: -1px;
+  margin-bottom: 2em; }
+
+.accordion {
+  padding: 0em; }
+  @media (min-width: 641px) {
+    .accordion {
+      padding: 0 2em; } }
+  @media (min-width: 773px) {
+    .accordion {
+      padding-right: 0em; } }
+
+.whatWeDoDescription {
+  list-style-type: none;
+  text-align: left;
+  box-sizing: border-box;
+  width: 18em;
+  /* 288px */
+  border: 1px solid #e5e5e5;
+  padding: 1em 0em .5em 0em;
+  margin: .5em auto 0 auto;
+  display: block; }
+  .whatWeDoDescription:first-child {
+    margin-top: 0; }
+
+.picturesService2 {
+  padding-left: .5em;
+  width: 1.875em;
+  /* 30px */
+  height: 1.875em;
+  display: inline-block;
+  vertical-align: middle; }
+
+.paragraphService2 {
+  margin-left: 1.2em;
+  margin-bottom: 1em;
+  display: inline-block; }
+
+.arrowService2 {
+  float: right;
+  display: inline-block;
+  margin: .5em .5em 0 0; }
+  .arrowService2:hover {
+    cursor: pointer; }
+
+.accordionPanel {
+  display: none;
+  padding: 1em 2em 1em 1em;
+  box-sizing: border-box;
+  border-top: 1px solid #e5e5e5;
+  height: 10.7em;
+  font-size: .9em;
+  overflow-y: scroll;
+  color: #999999; }
+
+.quote {
+  box-sizing: border-box;
+  height: 9em;
+  padding: 2em;
+  text-align: center;
+  background-color: #f8f8f8; }
+  .quote * {
+    max-width: 75em;
+    /* 1200px */
+    margin: auto; }
+
+.quoteParagraph {
+  max-width: 47.1em;
+  margin: auto;
+  font-size: .6em;
+  text-align: initial;
+  color: #999999; }
+
+.pictureQuote {
+  width: 10em;
+  margin-right: 1.5em;
+  float: left; }
+
+.quoteAuthor {
+  float: left;
+  font-family: "Kaushan Script", cursive;
+  font-weight: normal; }
+  .quoteAuthor::before {
+    margin: 0 .4em 0 0;
+    display: inline-block;
+    border-bottom: 0.2em solid #f38181;
+    content: "";
+    width: 2.5em; }
+
+.ourTeam {
+  padding: 4em 1em 4em 1em;
+  text-align: center; }
+  .ourTeam * {
+    max-width: 75em;
+    /* 1200px */
+    margin: auto; }
+
+.ourTeamTextParagraph {
+  color: #999999;
+  margin: auto;
+  max-width: 35em;
+  margin-bottom: 2em; }
+
+.ourTeamFigure {
+  display: inline-block;
+  margin: 0 1em; }
+
+.ourTeamPerson {
+  width: 16em;
+  /* 288px */
+  margin: 1em 0; }
+
+.myJob {
+  color: #b4b4b4;
+  font-size: .8em;
+  font-weight: 400; }
+
+.logos {
+  background-color: #f8f8f8; }
+  .logos * {
+    max-width: 75em;
+    /* 1200px */
+    margin: auto; }
+
+figure {
+  text-align: center;
+  height: 100%; }
+  figure:first-child {
+    height: 100%; }
+
+.logos {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 1em;
+  margin: auto; }
+
+.collectionOfLogos {
+  display: inline-block;
+  margin: 0 auto 0 auto; }
+
+.logosStyle {
+  margin: 2em;
+  height: 7em;
+  width: 7em; }
+
+.work {
+  padding: 4em 0;
+  text-align: center; }
+
+.photosWork {
+  display: block;
+  width: 100%; }
+
+.photosWorkBigger {
+  width: 100%;
+  vertical-align: top; }
+
+.groupOfPictures {
+  display: inline-block;
+  margin: auto;
+  column-count: 1;
+  column-gap: 0; }
+
+footer {
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 4em 1em .5em 1em; }
+  footer * {
+    max-width: 75em;
+    /* 1200px */
+    margin: auto; }
+
+.footerParagraph {
+  padding: 1em 0 1em 0;
+  font-size: .8em;
+  color: #999999;
+  margin: auto;
+  max-width: 43.75em;
+  text-align: left; }
+
+.followers, .followUs {
+  margin: 1em 0; }
+
+.followUs {
+  color: #b4b4b4; }
+
+.socialMedia:hover {
+  cursor: pointer; }
+
+form {
+  margin-top: 1em; }
+  form input {
+    padding: .5em; }
+  form button {
+    margin: 0;
+    background: #95e1d3;
+    padding: .65em;
+    border: 0;
+    color: white; }
+    form button:hover {
+      cursor: pointer; }
+
+.footerHeader {
+  margin: 2em 0 2em 0; }
+
+.blogsImage {
+  margin: 1em 0; }
+  .blogsImage:first-child {
+    margin: 0 0 1em 0; }
+
+.descriptionFooterBlogsPictures {
+  font-size: .8em; }
+
+.addDate {
+  color: #999999;
+  margin-bottom: 1em; }
+
+.groupOfInstagramPictures {
+  display: block;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 22.5em;
+  /* 288px */ }
+
+.author {
+  padding-top: 2em;
+  text-align: center;
+  margin: auto;
+  color: #999999; }
+  .author a {
+    text-decoration: none;
+    color: #f49b9b; }
+
+/*# sourceMappingURL=styles.css.map */

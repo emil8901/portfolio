@@ -1,0 +1,612 @@
+@import "varMix";
+
+*
+{
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body
+{
+	position: static;
+	min-width: 20em; /* 320px */
+}
+
+.banner
+{
+	background:
+	{		
+		image: url("../pictures/MoGo_background.jpg");
+		size: cover;
+		repeat: no-repeat;
+	}
+    text-align: center;	
+	color: $colorWhite;
+	width: 100%;
+	height: 40em;
+	
+	@include width1200px;
+}
+
+#logo
+{
+	margin: 2em 0 0 2em;
+	float: left;
+	height: auto;
+}
+
+.openMenu
+{
+	position: relative;
+	z-index: 2;
+	background: 0;
+	padding: 0;
+	border: 0;
+	color: $colorWhite;
+	margin: 1.85em 2em 0 0em;
+    float: right;
+	font-size: 1.2em;
+	
+	&:hover
+	{
+		cursor: pointer;
+	}
+}
+
+nav
+{	
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 40em;
+	min-width: 20em; 
+}
+
+.menu
+{
+	visibility: hidden;
+    padding: 0;
+	box-sizing: border-box;
+    float: right;
+    height: 100%;
+	background-color: rgb(39, 40, 56);
+    width: 50%;	
+}
+
+.menu li
+{
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 16.66%;
+    font-size: medium;
+	
+	&:hover
+	{
+		background-color: rgb(126, 127, 154);
+	}
+}
+
+.creativeTemplate
+{
+	padding:
+	{
+		top: 8em;
+		bottom: .5em;
+	}
+	font:
+	{
+	    family: $fontKaushan;
+		weight: normal;
+		size: 1.5em;
+	}
+    display: block;
+}
+
+.welcomeToMogo
+{
+	font-size: 3em;
+	display: block;
+	
+	&::after
+	{
+		display: block;
+		border-bottom: .05em solid $colorWhite;
+		content: "";
+		width: .75em;
+		margin: .5em auto .5em auto;	
+	}
+}
+
+.learnMore
+{
+	color: $colorWhite;
+	background: 0;	
+	border: .2em solid $colorWhite;
+	padding: .3em .8em .4em .8em;
+	margin: auto;
+}
+
+.aboutUs
+{
+	@include width1200px;
+	text-align: center;
+	padding: 4em 0 4em 0;
+}
+
+.aboutUsHeader::after
+{	
+	@include borderBottom;
+}
+
+.images
+{
+	width: 18em; /* 288px */
+}
+
+.kaushanFont
+{
+	font:
+	{
+		family: $fontKaushan;
+		weight: normal;
+	}
+}
+
+.aboutUsTextParagraph
+{
+	max-width: 65em;
+	color: rgb(153, 153, 153);
+	font-size: .85em;
+	padding: 0 3em;
+	margin: 0 auto 4em auto;
+}
+
+
+.images
+{
+	padding: 0 .5em 0 .5em;
+}
+	
+.facts
+{
+	@include width1200px;	
+	text-align: center;
+	color: rgb(255, 255, 255);
+	width: 100%;
+	background: rgb(149, 225, 211);
+	height: 10em;
+}
+
+.factsLine
+{	
+	height: 100%;
+	width: 100%;
+	max-width: 75em; /* 1200px */
+	margin: auto;
+}
+
+.factsDescription
+{
+    height: 100%;
+    width: 20%;
+    box-sizing: border-box;
+    float: left;
+    padding: 3em .4em 3em .4em;
+	border-right: .0625em solid rgb(181, 234, 224);
+	
+	&:last-child
+	{
+		border-right: 0px;
+	}
+}
+
+.howMuchThis
+{
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+.whatKindOfFacts
+{
+	font-size: .5em;
+}
+
+.service
+{
+ 
+	@include width1200px;	
+	padding: 4em 1em 4em 1em;
+	text-align: center;
+}
+
+.serviceHeader
+{
+	&::after
+	{
+		@include borderBottom;
+		margin-bottom: 2em;
+	}
+}
+
+.descriptionServices
+{
+	max-width: 25em;
+	display: inline-block;
+}
+
+.textNextToImage
+{	
+	box-sizing: border-box;
+	padding: 0 1em 1em 1em;
+	color: rgb(153, 153, 153);
+	font-size: .85em;
+	min-width: 18.75em; // 300px
+	max-width: 25em; // 400px
+	text-align: justify;
+	display: inline-block;
+}
+
+.titleOfText
+{
+	color: rgb(0, 0, 0);
+	margin-bottom: 1.5em;
+}
+
+.serviceImage
+{
+	vertical-align: top;
+}
+
+.feauture
+{
+	@include width1200px;
+	height: 24.25em; 
+	padding: 4em 1em 0 1em;
+	background-image: url("../pictures/feautureBackground.jpg");
+	text-align: center;
+}
+
+.iphoneImage
+{
+	width: 18em; /* 288px */
+}
+
+.service2
+{
+	text-align: center;
+	padding: 4em 1em 4em 1em;
+}
+
+.service2Picture
+{
+	width: 18em; /* 288px */
+	margin-top: -1px;
+	margin-bottom: 2em;
+}
+
+.accordion
+{
+	padding: 0em;
+	
+	@media (min-width: 641px)
+	{
+		padding: 0 2em;
+	}
+	
+	@media (min-width: 773px)
+	{
+		padding-right: 0em;
+	}
+}
+
+.whatWeDoDescription
+{
+	list-style-type: none;
+	text-align: left;
+	box-sizing: border-box;
+	width: 18em; /* 288px */
+	border: 1px solid rgb(229, 229, 229);
+	padding:  1em 0em .5em 0em;
+	margin: .5em auto 0 auto;
+	display: block;
+	
+	&:first-child
+	{
+		margin-top: 0;
+	}
+}
+
+.picturesService2
+{
+	padding-left: .5em;
+	width: 1.875em; /* 30px */
+	height: 1.875em; 
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.paragraphService2
+{
+	margin:
+	{
+		left: 1.2em;
+		bottom: 1em;
+	}
+	display: inline-block;
+}
+
+.arrowService2
+{
+	float: right;
+	display: inline-block;
+	margin: .5em .5em 0 0;
+	
+	&:hover
+	{
+		cursor: pointer;
+	}
+}
+
+.accordionPanel
+{
+	display: none;
+	padding: 1em 2em 1em 1em;
+	box-sizing: border-box;
+	border-top: 1px solid rgb(229, 229, 229);
+	height: 10.7em;
+	font-size: .9em;
+	overflow-y: scroll;
+	color: rgb(153, 153, 153);	
+}
+
+.quote
+{
+	@include width1200px;	
+	box-sizing: border-box;
+	height: 9em;
+	padding: 2em;
+	text-align: center;
+	background-color: rgb(248, 248, 248);
+}
+
+.quoteParagraph
+{
+	max-width: 47.1em;
+	margin: auto;
+	font-size: .6em;
+	text-align: initial;
+	color: rgb(153, 153, 153);
+}
+
+.pictureQuote
+{
+	width: 10em;
+    margin-right: 1.5em;
+    float: left;
+}
+
+.quoteAuthor
+{
+	float: left;
+	
+	&::before
+	{
+		margin: 0 .4em 0 0;
+		display: inline-block;
+		border-bottom: .2em solid rgb(243, 129, 129);
+		content: "";
+		width: 2.5em;
+	}
+
+	font:
+	{
+		family: $fontKaushan;
+		weight: normal;
+	}
+}
+
+.ourTeam
+{
+	@include width1200px;
+	padding: 4em 1em 4em 1em;
+	text-align: center;
+}
+
+.ourTeamTextParagraph
+{
+	color: rgb(153, 153, 153);
+    margin: auto;
+    max-width: 35em;
+    margin-bottom: 2em;
+}
+
+.ourTeamFigure
+{
+	display: inline-block;
+	margin: 0 1em;
+}
+
+.ourTeamPerson
+{
+	width: 16em; /* 288px */
+	margin: 1em 0;	
+}
+
+.myJob
+{
+	color: rgb(180, 180, 180);
+	font-size: .8em;
+	font-weight: 400;
+}
+
+.logos
+{
+	@include width1200px;
+	background-color: rgb(248, 248, 248);
+}
+
+figure
+{
+	text-align: center;
+	height: 100%;
+	
+	&:first-child
+	{
+		height: 100%;
+	}
+}
+
+.logos
+{
+	text-align: center;
+	box-sizing: border-box;
+	padding: 1em;
+	margin: auto;
+}
+
+.collectionOfLogos
+{
+	display: inline-block;
+	margin: 0 auto 0 auto;
+}
+
+.logosStyle
+{
+	margin: 2em;
+	height: 7em;
+	width: 7em;
+}
+
+.work
+{
+	padding: 4em 0;
+	text-align: center;
+}
+
+.photosWork
+{
+	display: block;
+	width: 100%;
+}
+
+.photosWorkBigger
+{
+	width: 100%;
+	vertical-align: top;
+}
+
+.groupOfPictures
+{
+    display: inline-block;
+    margin: auto;
+    column-count: 1;
+    column-gap: 0;
+}
+
+footer
+{
+	@include width1200px;
+	text-align: center;
+	background-color: rgb(248, 248, 248);
+	padding: 4em 1em .5em 1em;
+}
+
+.footerParagraph
+{
+	padding: 1em 0 1em 0;
+	font-size: .8em;
+	color: rgb(153, 153, 153);
+	margin: auto;
+    max-width: 43.75em;	
+	text-align: left;
+}
+
+.followers, .followUs
+{
+	margin: 1em 0;
+}
+
+.followUs
+{
+	color: rgb(180, 180, 180);
+}
+
+.socialMedia:hover
+{
+	cursor: pointer;
+}
+
+form
+{
+	margin-top: 1em;
+	
+	& input
+	{
+		padding: .5em;
+	}
+	
+	& button
+	{
+		margin: 0;
+		background: rgb(149, 225, 211);
+		padding: .65em;
+		border: 0;
+		color: rgb(255, 255, 255);
+		
+		&:hover
+		{
+			cursor: pointer;
+		}
+	}
+}
+
+.footerHeader
+{
+	margin: 2em 0 2em 0;
+}
+
+.blogsImage
+{
+	margin: 1em 0;
+	
+	&:first-child
+	{
+		margin: 0 0 1em 0;
+	}
+}
+
+.descriptionFooterBlogsPictures
+{
+	font-size: .8em;
+}
+
+.addDate
+{
+	color: rgb(153, 153, 153);
+	margin-bottom: 1em;
+}
+
+.groupOfInstagramPictures
+{
+	display: block;
+	flex-wrap: wrap;
+	margin: auto;
+	max-width: 22.5em; /* 288px */
+}
+
+.author
+{
+	padding-top: 2em;
+	text-align: center;
+	margin: auto;
+	color: rgb(153, 153, 153);
+	
+	& a
+	{
+		text-decoration: none;
+		color: rgb(244, 155, 155);
+	}
+}

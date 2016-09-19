@@ -1,0 +1,52 @@
+@media(min-width: 961px)
+{
+	.openMenu
+	{
+		display: none;
+	}
+	
+	.menu 
+	{	
+		visibility: visible;
+		background-color: initial;
+		width: auto;
+		margin: auto 1em .4em auto;
+		display: flex;
+		align-items: flex-end;
+		padding: 0;
+	}
+	
+	.menu li
+	{		
+		cursor: pointer;
+		display: flex;
+		margin: 0;
+		padding: 0 1em;
+		width: 100%;
+		justify-content: center;
+		
+		&:hover
+		{
+			background-color: initial;
+			color: rgb(39, 40, 56);
+		}
+	}	
+	
+	nav
+	{
+		position: initial;
+		display: flex;
+		height: auto;
+		margin: auto;
+	}
+	
+	.menu li:nth-child(n):active
+	{
+		color: black;
+	}
+	
+	.creativeTemplate
+	{
+		padding-top: 3em;
+	}
+}

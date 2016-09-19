@@ -1,0 +1,83 @@
+@media(min-width: 641px)
+{	
+	.creativeTemplate
+	{
+		padding-top: 5em;
+		font-size: 2em;
+	}
+	
+	.welcomeToMogo
+	{
+	    font-size: 5em;
+	}
+	
+	.howMuchThis
+	{
+		font-size: 2.5em;
+	}
+	
+	.feauture
+	{
+		height: 34em;
+	}
+	
+	.iphoneImage
+	{
+		width: 28em;
+	}
+	
+	.accordion
+	{
+		display: inline-block;
+	}
+	
+	.service2Picture
+	{
+		width: initial;
+		vertical-align: top;
+	}
+	
+	.quoteParagraph
+	{
+		font-size: .8em;
+	}
+
+	.pictureQuote
+	{
+		width: 8em;
+	}
+	
+	.groupOfPictures 
+	{
+		column-count: 2;
+	}
+	
+	.footerColumn2
+	{
+		margin-bottom: 4em;
+		min-width: 20.625em;
+		max-width: 20.625em;
+	}
+	
+	.blogsImage
+	{
+		float: left;
+		
+		&:first-child
+		{
+			margin: 0 .5em 1em 0;
+		}
+	}
+	
+	.addDate
+	{
+		margin:
+		{
+			bottom: 3em;
+			top: 1em;
+		}
+		
+		font-size: .7em;
+	}
+	
+}
