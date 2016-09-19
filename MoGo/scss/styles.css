@@ -162,13 +162,14 @@ nav {
 .whatKindOfFacts {
   font-size: .5em; }
 
-.service {
+.service 
+{
   padding: 4em 1em 4em 1em;
-  text-align: center; }
-  .service * {
-    max-width: 75em;
-    /* 1200px */
-    margin: auto; }
+  text-align: center; 
+  max-width: 75em;
+  margin: auto; 
+  
+}
 
 .serviceHeader::after {
   display: block;
