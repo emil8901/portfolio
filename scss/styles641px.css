@@ -1,0 +1,69 @@
+/* variables */
+/* variables */
+/* mixins */
+/* mixins */
+@media (min-width: 641px) {
+  .container {
+    height: 45em;
+  }
+
+  #logo:hover {
+    cursor: pointer;
+  }
+
+  .open-menu {
+    display: none;
+  }
+
+  .menu {
+    position: relative;
+    float: right;
+    display: inline-block !important;
+    width: 60%;
+    padding: 0;
+    clear: none;
+  }
+
+  .menuDescription {
+    line-height: 2.5em;
+    height: 2.5em;
+    max-width: 12.5em;
+    /* 200px */
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    background: 0;
+    color: white;
+  }
+  .menuDescription .mailContact {
+    color: white;
+  }
+  .menuDescription:first-child {
+    margin-top: 0;
+  }
+  .menuDescription:hover {
+    cursor: pointer;
+  }
+  .menuDescription:active, .menuDescription .mailContact:active {
+    background-color: white;
+    color: #011646;
+  }
+
+  header {
+    font-size: 1.2em;
+  }
+
+  section {
+    line-height: 4em;
+    font-size: 2em;
+    width: 100%;
+    height: 8em;
+    background-color: #011646;
+    text-align: center;
+  }
+
+  .project img {
+    width: 18em;
+    height: 11.11em;
+  }
+}
