@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang = "pl">
+
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device-width, 
+		initial-scale = 1">
+		<meta http-equiv = "x-ua-compatible" content = "ie = edge">
+
+		<title> Portfolio Emil Iwicki </title>
+		
+		<link rel = "stylesheet" href = "scss/styles.css">	
+		<link rel = "stylesheet" href = "scss/styles641px.css">
+		<link rel = "stylesheet" href = "css/fontello.css">
+		<link href = "https://fonts.googleapis.com/css?family=Oxygen&subset=latin,latin-ext" rel = "stylesheet">
+		<link href = "animate.css" rel = "stylesheet" type = "text/css">
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class = "container">
+
+			<nav>
+				<figure>
+					<img src = "pictures/logo.png" alt = "logo" id = "logo">
+				</figure>
+				<button class = "open-menu">
+					<i class = "icon-menu"></i>
+					<i class = "icon-cancel"></i> 
+				</button>
+				<ol class = "menu">
+					<li class = "menuDescription scrollToCv">Umiejętności</li>
+					<li class = "menuDescription scrollToAboutMe">O mnie</li>
+					<li class = "menuDescription scrollToContact">Projekt</li>
+					<li class = "menuDescription" ><a href = "mailto:emil.iwicki@gmail.com" class = "mailContact">Kontakt</a></li>
+				</ol>
+			</nav>
+
+			<header>
+				<h1>Emil Iwicki</h1>
+				<h1>Student PG</h1>
+			</header>
+			
+		</div>
+		
+		<section class = "CV-introduction">
+			<h4 class = "CV-introduction-text">Umiejętności<br>
+			<i class = "icon-doc-text"></i></h4>
+		</section>
+		
+		<article class = "CV">
+				<article class = "skills skillsDescription pApperance">	
+				
+					<div class = "column">
+					
+						<h1>Średnio zaawansowane:</h1>	
+					
+						<img src = "skills/html5.svg" alt = "html5">	
+						<img src = "skills/css3.svg" alt = "css3">
+						<img src = "skills/sass.svg" alt = "sass">
+						
+					</div>
+					
+					<div class = "column">
+					
+						<h1>Podstawowe:</h1>					
+					
+						<img src = "skills/jQuery.svg" alt = "jQuery">				
+						<img src = "skills/photoshop.svg" alt = "photoshop">
+						<img src = "skills/javascript.svg" alt = "bootstrap">
+						<img src = "skills/rwd.png" alt = "rwd">
+						
+					</div>	
+					
+					<div class = "column">
+					
+						<h1>W trakcie nauki:</h1>
+						
+						<img src = "skills/git.svg" alt = "github">					
+						<img src = "skills/bootstrap.svg" alt = "bootstrap">
+						
+					</div>	
+					
+				</article>
+		</article>
+		
+		<section class = "aboutMeIntroduction">
+			<h4 class = "aboutMeIntroductionText">O mnie<br>
+			<i class = "icon-user"></i></h4>
+		</section>
+		
+		<article class = "aboutMe">
+			<h4 class = "descriptionOfMe">Witam, jestem początkującym frontend developerem. Nazywam się Emil Iwicki i studiuję informatykę na Politechnice Gdańskiej. Od ponad roku związany z programowaniem. W wolnym czasie pływak.</h4>
+			<figure class = "aboutMeImage">
+				<img src = "pictures/faceDesaturation.jpg" class = "imgFace" alt = "Emil Iwicki">
+			</figure>
+			<q class = "quotation">Talk is cheap. Show me the code</q>
+			<p class = "author">Linus Torvalds</p>
+		</article>
+		
+		<section class = "contactIntroduction">
+			<h4 class = "contactIntroductionText">Projekt<br>
+			<i class = "icon-mail-alt"></i></h4>
+		</section>
+
+		<section class = "project">
+
+				<a href = "MoGo/index.html">
+					<img src = "pictures/mogoSite.png">
+				</a>
+
+		</section>
+		
+		<footer>
+			<p class = "copy">&copy 2016 Emil Iwicki</p>
+			<a href = "https://www.facebook.com/emil.iwicki">
+			<i class = "icon-facebook"></i></a>
+		</footer>
+		
+		<script src = "jquery-3.1.0.js"></script>
+		<script src = "javascript.js"></script>
+	</body>
+
+</html>
