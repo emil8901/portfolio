@@ -15,7 +15,9 @@
     width: 6em; }
 
   .groupOfPictures {
-    column-count: 4; }
+    column-count: 4;
+    -moz-column-count: 4;
+  }
 
   .groupOfColumns {
     display: flex; }
