@@ -216,8 +216,8 @@ nav
 
 .service
 {
-	max-width: 75em;
-	margin: auto;
+ 
+	@include width1200px;	
 	padding: 4em 1em 4em 1em;
 	text-align: center;
 }
@@ -503,7 +503,9 @@ figure
     display: inline-block;
     margin: auto;
     column-count: 1;
+	-moz-column-count: 1;	
     column-gap: 0;
+	-moz-column-gap: 0;	
 }
 
 footer
