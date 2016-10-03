@@ -29,7 +29,9 @@
     width: 8em; }
 
   .groupOfPictures {
-    column-count: 2; }
+    column-count: 2;
+    -moz-column-count: 2;
+  }
 
   .footerColumn2 {
     margin-bottom: 4em;
