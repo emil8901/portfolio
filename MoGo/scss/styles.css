@@ -382,7 +382,10 @@ figure {
   display: inline-block;
   margin: auto;
   column-count: 1;
-  column-gap: 0; }
+  -moz-column-count: 1;
+  column-gap: 0;
+  -moz-column-gap: 0;
+}
 
 footer {
   text-align: center;
